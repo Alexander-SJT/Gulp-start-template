@@ -1,0 +1,32 @@
+body {
+	scroll-behavior: smooth;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.outer-container {
+	max-width: $outer-container-width;
+	margin: 0 auto;
+}
+
+.is-hidden {
+	overflow: hidden;
+}
