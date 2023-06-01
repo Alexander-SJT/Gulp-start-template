@@ -1,0 +1,16 @@
+//* hero section text
+%hero-text-style {
+	color: $color-light;
+	font-size: clamp-px(18, 20);
+	font-weight: 700;
+	letter-spacing: 0.02em;
+}
+
+//* p text
+%text-style {
+	color: $color-text;
+	font-size: clamp-px(16, 20);
+	font-weight: 400;
+	line-height: $line-height-text;
+	letter-spacing: $letter-spacing-base;
+}

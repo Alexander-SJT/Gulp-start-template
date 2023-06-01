@@ -1,0 +1,29 @@
+.hero {
+	padding-bottom: clamp-px(30, 60);
+	padding-top: clamp-px(200, 315);
+	@include bg-img("hero/hero-img");
+	@include overlay(0.2);
+
+	&__content {
+		position: relative;
+		z-index: 5;
+	}
+
+	&__title {
+		max-width: 700px;
+		margin-bottom: clamp-px(30, 56);
+		@extend %hero-title-style;
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		gap: $gap-small;
+		margin-bottom: clamp-px(80, 180);
+		@extend %header-link-style;
+	}
+
+	&__info {
+		@extend %hero-text-style;
+	}
+}

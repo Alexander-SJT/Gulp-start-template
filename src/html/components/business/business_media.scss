@@ -1,0 +1,12 @@
+@media (max-width: 425px){
+    .business {
+        &__item {
+            gap: $gap-small;
+        }
+
+        &__icon-box {
+            padding-right: 0px;
+            border-right: 0;
+        }
+    }
+}

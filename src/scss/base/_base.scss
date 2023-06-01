@@ -1,5 +1,6 @@
 body {
 	scroll-behavior: smooth;
+	font-family: $main-font;
 }
 
 a,
@@ -7,8 +8,8 @@ button,
 input,
 textarea,
 select {
-
-	
+	outline-offset: 4px;
+	outline-color: $color-accent;
 }
 
 img {
@@ -17,9 +18,9 @@ img {
 }
 
 .container {
-	max-width: unset;
+	max-width: 1650px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 clamp-px(7, 15);
 }
 
 .outer-container {

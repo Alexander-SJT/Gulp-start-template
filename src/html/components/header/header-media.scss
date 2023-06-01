@@ -1,0 +1,25 @@
+@media (max-width: 1310px) {
+	.header {
+		&__contacts {
+			display: none;
+		}
+
+		&__burger {
+			display: block;
+		}
+	}
+}
+
+@media (max-width: 682px) {
+	.header {
+		&__logo {
+			flex-direction: column;
+			gap: 0;
+			margin-right: 0;
+		}
+
+		&__link {
+			display: none;
+		}
+	}
+}
