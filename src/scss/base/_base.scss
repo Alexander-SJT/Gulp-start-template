@@ -8,7 +8,7 @@ input,
 textarea,
 select {
 
-	}
+	
 }
 
 img {
@@ -17,13 +17,13 @@ img {
 }
 
 .container {
-	max-width: $container-width;
+	max-width: unset;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
 .outer-container {
-	max-width: $outer-container-width;
+	max-width: unset;
 	margin: 0 auto;
 }
 
