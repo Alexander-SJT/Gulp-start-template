@@ -1,0 +1,29 @@
+-
+    var products = [
+        "Оборудование и транспортные средства",
+        "Одежда, обувь, аксессуары",
+        "Товары химической промышленности",
+        "Пищевая химия, пищевые добавки",
+        "Посадочные материалы",
+        "Текстиль, ткани и нити",
+        "Консервация",
+        "Продукты питания",
+        "Свежие фрукты и овощи",
+        "Орехи, кунжут и сухофрукты",
+        "Замороженная плодовоовощная продукция",
+        "Замороженные полуфабрикаты",
+        "Замороженные морепродукты",
+        "Кофе, чай и какао",
+    ]
+section.products 
+    .container 
+        h2.products__title Работаем с любыми товарами
+        .products__content 
+            ul.products__list
+                each item, index in products 
+                    li.products__item 
+                        .products__box 
+                            +svg(`products--icon-${index + 1}`, "products__icon", 40, 40)
+                        span.products__text= item
+            .products__picture 
+                +img-simple("products/big-ship", "products__img", 492, 666, "big-ship", "lazy")

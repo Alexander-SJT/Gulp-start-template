@@ -1,0 +1,148 @@
+.services {
+	padding: clamp-px(30, 100) 0;
+
+	&__title {
+		@extend %title-style;
+		margin-bottom: clamp-px(30, 80);
+	}
+
+	&__content-top {
+		display: grid;
+		grid-template-columns: 1.8fr 1fr 1fr;
+		grid-auto-flow: dense;
+		gap: 30px;
+		margin-bottom: 30px;
+		@media (any-hover: hover) {
+			& a.services__item:hover {
+				background-color: $color-title;
+				.services__name {
+					color: $color-light;
+				}
+
+				.services__icon {
+					stroke: $color-light;
+				}
+			}
+		}
+	}
+
+	&__content-bottom {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+
+		@media (any-hover: hover) {
+			& a.services__item-bottom:hover {
+				background-color: $color-title;
+				.services__name {
+					color: $color-light;
+				}
+
+				.services__icon {
+					stroke: $color-light;
+				}
+			}
+		}
+	}
+
+	&__item {
+		position: relative;
+		padding: 32px 48px;
+		background-color: $color-accent;
+		overflow: hidden;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in;
+
+		&:nth-child(1) {
+			background: url(../img/services/logistic.webp), url(../icons/decor/symbol.svg),
+				$color-accent;
+			background-repeat: no-repeat;
+			background-size: 372px 593px, 200px 200px;
+			background-position: right center, right bottom;
+		}
+
+		&:nth-child(2) {
+			background: url(../img/services/police.webp), url(../icons/decor/symbol.svg),
+				$color-accent;
+			background-repeat: no-repeat;
+			background-size: 280px 395px, 200px 200px;
+			background-position: 85% 85%, right bottom;
+		}
+
+		&:nth-child(3) {
+			background: url(../img/services/documents.webp),
+				url(../icons/decor/symbol.svg), $color-accent;
+			background-repeat: no-repeat;
+			background-size: 217px 292px, 200px 200px;
+			background-position: 75% 75%, right bottom;
+		}
+	}
+
+	&__item-bottom {
+		position: relative;
+		height: 402px; 
+		z-index: 150;
+		padding: 32px 48px;
+		background-color: $color-accent;
+		overflow: hidden;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in;
+
+		&:nth-child(1) {
+			background: url(../img/services/earth-cargo.webp),
+				url(../icons/decor/symbol.svg), $color-accent;
+			background-repeat: no-repeat;
+			background-size: 262px 264px, 200px 200px;
+			background-position: 85% 85%, right bottom;
+		}
+
+		&:nth-child(2) {
+			background: url(../img/services/earth.webp), url(../icons/decor/symbol.svg),
+				$color-accent;
+			background-repeat: no-repeat;
+			background-size: 262px 252px, 200px 200px;
+			background-position: 85% 85%, right bottom;
+		}
+
+		&:nth-child(3) {
+			background: url(../icons/decor/symbol.svg), $color-accent;
+			background-repeat: no-repeat;
+			background-size: 200px 200px;
+			background-position: right bottom;
+		}
+	}
+
+	&__name {
+		display: inline-block;
+		@extend %subtitle-style;
+		padding-bottom: clamp-px(16, 32);
+		margin-bottom: clamp-px(16, 32);
+		border-bottom: 1px solid $color-light;
+	}
+
+	&__list {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__list-item {
+		@extend %text-style;
+		list-style-position: inside;
+		list-style-type: square;
+	}
+
+	&__link {
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__icon {
+		display: none;
+		width: 30px;
+		height: 15px;
+		stroke: $color-title;
+	}
+}

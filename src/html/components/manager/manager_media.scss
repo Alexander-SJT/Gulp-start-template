@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+	.manager {
+		&__inner {
+			flex-direction: column;
+		}
+
+		&__content {
+			max-width: 100%;
+			margin-bottom: $gap-base;
+		}
+
+		&__decor-item {
+			align-self: center;
+			&::after {
+				content: none;
+			}
+		}
+	}
+}
