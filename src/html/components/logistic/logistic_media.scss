@@ -1,0 +1,44 @@
+@media (max-width: 1225px) {
+	.logistic {
+		&__inner {
+			flex-direction: column;
+		}
+
+		&__content {
+			max-width: 80%;
+		}
+
+		&__subtitle {
+			// max-width: 75%;
+		}
+
+		&__picture {
+			width: 100%;
+			height: 300px;
+		}
+
+		&__img {
+			object-position: 0 bottom;
+		}
+	}
+}
+
+@media (max-width: 870px) {
+	.logistic {
+		&__content {
+			max-width: unset;
+		}
+
+		&__picture {
+			height: 200px;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.logistic {
+		&__item:not(:last-child) {
+			align-items: flex-start;
+		}
+	}
+}

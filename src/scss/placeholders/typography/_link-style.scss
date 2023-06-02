@@ -18,3 +18,24 @@
 		}
 	}
 }
+
+%link-style {
+	padding: clamp-px(12, 15) clamp-px(25, 30);
+	font-size: 16px;
+	color: $color-light;
+	background-color: $color-title;
+	border-radius: $radius-base;
+	cursor: pointer;
+	transition-property: color, background-color, outline;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $color-light;
+			color: $color-title;
+			outline: 2px solid $color-accent;
+			outline-offset: -1px;
+		}
+	}
+}

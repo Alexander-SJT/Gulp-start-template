@@ -62,4 +62,42 @@
 		align-items: center;
 		gap: 20px;
 	}
+
+	&__burger {
+		display: none;
+		flex-direction: column;
+		gap: 8px;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		background-color: transparent;
+		cursor: pointer;
+		transition: all 0.1s linear;
+	}
+
+	&__burger--active {
+		gap: 12px;
+		transition: all 0.1s linear;
+
+		.header__burger-line:nth-child(1) {
+			transform-origin: top right;
+			transform: rotate(-45deg);
+		}
+		.header__burger-line:nth-child(2) {
+			opacity: 0;
+		}
+		.header__burger-line:nth-child(3) {
+			transform-origin: bottom right;
+			transform: rotate(45deg);
+		}
+	}
+
+	&__burger-line {
+		display: block;
+		width: 44px;
+		height: 3px;
+		background-color: $color-light;
+		border-radius: 5px;
+		position: relative;
+	}
 }
