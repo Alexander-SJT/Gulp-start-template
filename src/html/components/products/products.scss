@@ -14,19 +14,15 @@
 	}
 
 	&__list {
-		height: 700px;
-		width: 1080px;
-
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: $gap-base;
 	}
 
 	&__item {
 		display: flex;
 		align-items: center;
-		gap: $gap-base;
+		gap: clamp-px(15, 30);
 	}
 
 	&__box {
@@ -35,6 +31,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-shrink: 0;
 		border-radius: 50%;
 		background-color: $color-accent;
 	}

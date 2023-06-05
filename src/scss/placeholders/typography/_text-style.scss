@@ -14,3 +14,11 @@
 	line-height: $line-height-text;
 	letter-spacing: $letter-spacing-base;
 }
+
+//* input form
+%input-text-style {
+	color: $color-title;
+	font-size: clamp-px(16, 18);
+	font-weight: 400;
+	letter-spacing: $letter-spacing-base;
+}

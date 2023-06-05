@@ -1,0 +1,74 @@
+.trust {
+	padding: clamp-px(30, 100) 0;
+
+	&__title {
+		@extend %title-style;
+		margin-bottom: clamp-px(30, 80);
+	}
+
+	&__list {
+	}
+
+	&__item {
+		height: clamp-px(240, 386);
+		border: 1px solid $color-border;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 30px;
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	position: relative;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background-color: $color-accent;
+	transition: background-color 0.3s ease-in-out;
+
+	&::after {
+		font-size: 26px;
+		font-weight: 700;
+		transition: color 0.3s ease-in-out;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $color-title;
+			&::after {
+				color: $color-light;
+			}
+		}
+	}
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination {
+	position: static;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: clamp-px(13, 16);
+	margin-top: clamp-px(20, 50);
+}
+.swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+	width: clamp-px(25, 40);
+	height: clamp-px(25, 40);
+	background-color: $color-accent;
+}

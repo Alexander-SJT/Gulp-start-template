@@ -1,0 +1,16 @@
+@media (max-width: 1024px) {
+	.form {
+		max-width: unset;
+	}
+}
+
+@media (max-width: 545px) {
+	.form {
+		&__wrapper,
+		&__top,
+		&__mid,
+		&__bot {
+			grid-template-columns: 1fr;
+		}
+	}
+}

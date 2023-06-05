@@ -1,0 +1,16 @@
+.cost {
+	padding: clamp-px(30, 100) 0;
+
+	&__title {
+		@extend %title-style;
+		margin-bottom: clamp-px(30, 80);
+	}
+
+	&__inner {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: $gap-large;
+	}
+
+}

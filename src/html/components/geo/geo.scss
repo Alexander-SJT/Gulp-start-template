@@ -1,0 +1,48 @@
+.geo {
+	padding: clamp-px(30, 100) 0;
+
+	&__title {
+		@extend %title-style;
+		margin-bottom: clamp-px(30, 80);
+	}
+
+	&__inner {
+		@include bg-img("geo/geography");
+		background-size: contain;
+		min-height: clamp-px(260, 753);
+		width: 100%;
+		margin-bottom: $gap-base;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__info {
+		text-align: center;
+		font-weight: 700;
+		color: $color-title;
+	}
+
+	&__value {
+		display: block;
+		font-size: clamp-px(56, 104);
+		letter-spacing: 0.02em;
+	}
+
+	&__text {
+		font-size: clamp-px(15, 26);
+		letter-spacing: $letter-spacing-base;
+	}
+
+	&__icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+	}
+
+    &__icon {
+        width: clamp-px(40, 60);
+        height: clamp-px(40, 60);
+    }
+}
