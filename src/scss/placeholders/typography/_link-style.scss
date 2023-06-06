@@ -39,3 +39,15 @@
 		}
 	}
 }
+
+%footer-link-style {
+	font-size: clamp-px(16, 20);
+	color: $color-light;
+	letter-spacing: $letter-spacing-base;
+	transition: color 0.2s linear;
+	@media (any-hover: hover) {
+		&:hover {
+			color: $color-border;
+		}
+	}
+}

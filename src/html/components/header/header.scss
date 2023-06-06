@@ -47,6 +47,13 @@
 		font-size: clamp-px(18, 28);
 		font-weight: 700;
 		letter-spacing: $letter-spacing-base;
+		transition: color .2s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: darken($color-light, 25%);
+			}
+		}
 	}
 
 	&__contacts-text {
@@ -69,13 +76,15 @@
 		gap: 8px;
 		align-items: center;
 		justify-content: center;
-		margin-left: auto;
+		margin-left: $gap-base;
 		background-color: transparent;
 		cursor: pointer;
 		transition: all 0.1s linear;
 	}
 
 	&__burger--active {
+		position: relative;
+		z-index: 22;
 		gap: 12px;
 		transition: all 0.1s linear;
 
@@ -89,6 +98,10 @@
 		.header__burger-line:nth-child(3) {
 			transform-origin: bottom right;
 			transform: rotate(45deg);
+		}
+
+		.header__burger-line {
+			background-color: $color-title;
 		}
 	}
 

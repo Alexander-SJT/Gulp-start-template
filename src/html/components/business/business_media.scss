@@ -1,3 +1,13 @@
+@media (max-width: 1007px){
+    .business {
+        &__item {
+            flex-basis: 888px;
+        }
+    }
+    
+}
+
+
 @media (max-width: 425px){
     .business {
         &__item {

@@ -3,6 +3,8 @@
 	padding-top: clamp-px(200, 315);
 	@include bg-img("hero/hero-img");
 	@include overlay(0.2);
+	overflow: hidden;
+	z-index: 0;
 
 	&__content {
 		position: relative;
@@ -25,5 +27,11 @@
 
 	&__info {
 		@extend %hero-text-style;
+
+		@media (any-hover:hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 }

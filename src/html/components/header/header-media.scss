@@ -10,16 +10,26 @@
 	}
 }
 
-@media (max-width: 682px) {
+@media (max-width: 721px) {
 	.header {
 		&__logo {
 			flex-direction: column;
 			gap: 0;
 			margin-right: 0;
+			align-items: flex-start;
 		}
 
 		&__link {
 			display: none;
+		}
+
+		&__burger {
+			margin-left: auto;
+		}
+
+		&__logo-notes {
+			width: 195px;
+			font-size: 12px;
 		}
 	}
 }

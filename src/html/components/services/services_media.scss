@@ -42,6 +42,14 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	.services {
+		&__icon {
+			display: block;
+		}
+	}
+}
+
 @media (max-width: 590px) {
 	.services {
 		&__item {
@@ -103,10 +111,6 @@
 				background-position: right bottom;
 			}
 		}
-
-        &__icon {
-            display: block;
-        }
 	}
 }
 

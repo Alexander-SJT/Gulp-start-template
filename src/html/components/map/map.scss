@@ -1,0 +1,13 @@
+.map {
+	padding: clamp-px(30, 100) 0;
+
+	&__title {
+		@extend %title-style;
+		margin-bottom: clamp-px(30, 80);
+	}
+
+    &__map-wrap {
+        background-color: $color-form;
+        height: 720px;
+    }
+}

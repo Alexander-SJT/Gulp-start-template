@@ -60,9 +60,10 @@ form.form(action="#")
     span.form__notes 
         | *Обязательное поле ввода
     button.form__btn(type="submit") Отправить
-    input.form__checkbox(type="checkbox", name="policy", required)
-    span.form__policy 
-        | Я принимаю правила 
-        a.form__link(href="#") политики конфиденциальности
-        | , и даю согласие на 
-        a.form__link(href="#") обработку своих персональных данных 
+    .form__policy
+        input.form__checkbox(type="checkbox", name="policy", required, aria-label="Policy checkbox")
+        span.form__policy-text 
+            | Я принимаю правила 
+            a.form__link(href="#") политики конфиденциальности
+            | , и даю согласие на 
+            a.form__link(href="#") обработку своих персональных данных 

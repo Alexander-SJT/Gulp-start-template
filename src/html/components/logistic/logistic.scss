@@ -73,6 +73,7 @@
 		margin-bottom: $gap-base;
 		@extend %text-style;
 		font-size: clamp-px(20, 24);
+		font-style: italic;
 	}
 
 	&__link {
