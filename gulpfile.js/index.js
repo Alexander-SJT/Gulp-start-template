@@ -12,6 +12,7 @@ const html = require("./tasks/html");
 const scss = require("./tasks/scss");
 const js = require("./tasks/js");
 const img = require("./tasks/img");
+const sprite = require("./tasks/sprite");
 const icon = require("./tasks/icon");
 const font = require("./tasks/font");
 const server = require("./tasks/server");
@@ -22,14 +23,15 @@ const watcher = () => {
 	$.gulp.watch($.path.scss.watch, scss);
 	$.gulp.watch($.path.js.watch, js);
 	$.gulp.watch($.path.img.watch, img);
-	$.gulp.watch($.path.icon.watch, icon);
+	$.gulp.watch($.path.sprite.watch, sprite);
 	$.gulp.watch($.path.font.watch, font);
+	$.gulp.watch($.path.icon.watch, icon);
 };
 
 //* Prod Сборка
 const prod = $.gulp.series(
 	clear,
-	$.gulp.parallel(html, scss, js, img, icon, font)
+	$.gulp.parallel(html, scss, js, icon, img, sprite, font)
 );
 
 //* Dev Сборка
@@ -42,8 +44,9 @@ exports.html = html;
 exports.scss = scss;
 exports.js = js;
 exports.img = img;
-exports.icon = icon;
+exports.sprite = sprite;
 exports.font = font;
+exports.icon = icon;
 
 exports.prod = prod;
 exports.dev = dev;

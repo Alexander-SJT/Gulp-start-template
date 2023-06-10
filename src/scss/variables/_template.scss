@@ -1,13 +1,11 @@
-$container: 1620px;
+$container-width: null;
 
-$title-offset: clamp-px(35, 80);
+$offset-small: null;
+$offset-medium: null;
+$offset-base: null;
+$offset-medium: null;
+$offset-large: null;
 
-$gap-small: 10px;
-$gap-medium: 24px;
-$gap-base: 32px;
-$gap-medium: 40px;
-$gap-large: 80px;
-
-$radius-input: 5px;
-$radius-base: 10px;
+$radius-base: null;
+$radius-input: null;
 

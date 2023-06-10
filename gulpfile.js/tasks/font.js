@@ -5,7 +5,8 @@ const font = () => {
 	return $.gulp
 		.src($.path.font.src)
 		.pipe(newer($.path.font.dest))
-		.pipe($.gulp.dest($.path.font.dest));
+		.pipe($.gulp.dest($.path.font.dest))
+		.pipe($.browserSync.stream());
 };
 
 module.exports = font;

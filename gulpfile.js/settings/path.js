@@ -34,8 +34,14 @@ module.exports = {
 		dest: path_dest + "/img",
 	},
 
+	sprite: {
+		src: path_src + "/icons/**/*.svg",
+		watch: path_src + "/icons/**/*.svg",
+		dest: path_dest + "/icons",
+	},
+
 	icon: {
-		src: path_src + "/icons/**/*.{svg,png,xml,ico,webmanifest}",
+		src: path_src + "/icons/**/*",
 		watch: path_src + "/icons/**/*",
 		dest: path_dest + "/icons",
 	},

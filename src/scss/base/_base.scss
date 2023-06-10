@@ -18,16 +18,7 @@ img {
 }
 
 .container {
-	max-width: 1650px;
+	max-width: $container-width;
 	margin: 0 auto;
 	padding: 0 clamp-px(7, 15);
-}
-
-.outer-container {
-	max-width: unset;
-	margin: 0 auto;
-}
-
-.is-hidden {
-	overflow: hidden;
 }
